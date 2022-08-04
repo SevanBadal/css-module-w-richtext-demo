@@ -6,7 +6,7 @@ import DOMPurify from 'isomorphic-dompurify';
 
 export default function Home() {
   function createMarkupString() {
-    return '<h3>I\'m an H3</h3><p>First &middot; Second</p>';
+    return '<script>alert("hello")</script><h3>I\'m an H3</h3><p>First &middot; Second</p>';
   }
   return (
     <div className={styles.container}>
